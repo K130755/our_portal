@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d35ad727d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pretext.eu - Copywriting i Korekta tekstów</title>
+</head>
+
+<body>
+    <!-- sekcja pop up - zaloguj się -->
+    <section class="c-modal">
+        <div class="c-modal__wrap">
+            <div class="c-modal__top">
+                <h3 class="c-heading c-heading__h3 c-modal__top--h3">Zaloguj się do portalu</h3>
+            </div>
+            <div class="c-modal__middle">
+                <form id="formlog" class="c-form" action="">
+                    <label class="c-form__label" for="mail">Podaj login:</label><br>
+                    <input class="c-form__item type=" mail" id="mail" name="mail"><br>
+                    <label class="c-form__label" for="password">Podaj haslo:</label><br>
+                    <input class="c-form__item" type="password" id="password" name="password"><br>
+                    <input class="c-btn c-btn__blue" type="submit" value="Zaloguj się" id="submit" name="submit">
+                </form>
+            </div>
+            <div class="c-modal__bottom">
+                <div class="c-modal__bottom--forgotten-pass">
+                    <h4 class="c-heading c-heading__h4">Zapomniałeś hasła?</h4>
+                    <p>Kliknij <span class="c-modal__bottom--reset">tutaj</span>, aby odzyskać hasło.</p>
+                </div>
+                <div class="c-modal__bottom--register">
+                    <h4 class="c-heading c-heading__h3">Nie masz jeszcze konta?</h4>
+                    <p>Dołącz do nas!</p>
+                    <button class="c-btn c-btn__gold">Zarejestruj się</button>
+                </div>
+            </div>
+            <span class="c-modal__hide"><i class="fas fa-times"></i></span>
+        </div>
+    </section>
+
+    <header class="t-header">
+
+        <!-- logo w menu -->
+        <div class="t-header__logo">
+            <img class="t-header__logo--big" src="assets/img/logo/logo.png" alt="logo portalu Pretext">
+            <img class="t-header__logo--small" src="assets/img/logo/pen.png" alt="ikona logo">
+        </div>
+        <!-- menu pod logiem -->
+        <div class="t-header__logo t-header__logo--under">
+            <ul class="c-menu-under-logo">
+                <li class="c-menu-under-logo__item">
+                    <div class=""><a class="c-menu-under-logo--link" href="zasadyWspolpracy" target="_self">Zasady
+                            współpracy</a></div>
+                </li>
+                <li class="c-menu-under-logo__item">
+                    <div class=""><a class="c-menu-under-logo--link" href="piszDlaNas" target="_self">Pisz dla nas</a>
+                    </div>
+                </li>
+                <li class="c-menu-under-logo__item">
+                    <div class=""><a class="c-menu-under-logo--link" href="faq" target="_self">Pytania i odpowiedzi</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- menu mobile - niezlogowany użytkownik -->
+        <div class="t-header__mobile-menu">
+            <div class="c-menu-main__item">
+                <i id="btnNestedMenu" class="fas fa-bars"></i>
+            </div>
+            <ul class="c-menu-main__nested">
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="kalkulator">Wycena</a>
+                </li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="kontakt">Kontakt</a>
+                </li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="faq">Pytania i
+                        odpowiedzi</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="piszDlaNas">Dla
+                        Wykonawców</a></li>
+                        <!-- menu mobile zalogowany zleceniodawca -->
+                <!-- <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Moje zlecenia</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Portfel</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Wycena</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Wykonawcy</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        FAQ</a></li> -->
+                        <!-- menu mobile zalogowany wykonawca -->
+                <!-- <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Strefa zleceń</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Moje zlecenia</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Portfel</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        FAQ</a></li> -->
+            </ul>
+
+        </div>
+        <!-- menu strona główna deskop użytkownik niezalogowany-->
+        <div class="c-menu-main t-header__menu-main">
+            <div class="t-header__menu-main--links">
+                <div class="c-menu-main__item u-d-none-under-xl ">
+                    <div class=""><a class="c-menu-main__item--link " href="index" target="_self">Strona główna</a>
+                    </div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <div class=""><a class="c-menu-main__item--link " href="kalkulator" target="_self">Wycena</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <div class=""><a class="c-menu-main__item--link " href="kontakt" target="_self">Kontakt</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <div class=""><a class="c-menu-main__item--link " href="faq" target="_self">FAQ</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <i class="fas fa-grip-lines-vertical u-color-secondary" aria-hidden="false"></i>
+                    <div class=""><a class="c-menu-main__item--link u-color-secondary" href="piszDlaNas"
+                            target="_self">Dla Wykonawców</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <button class="c-btn c-btn__outline-gold">Zarejestruj się</button>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-medium">
+                    <button id="btnLog" class="c-btn c-btn__gold">Zaloguj się</button>
+                </div>
+                
+                <!-- Menu dla ZLECENIODAWCÓW -->
+                <!-- <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Moje zlecenia</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Portfel</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Wycena</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Wykonawcy</a></div>
+                </div> -->
+                <!-- Menu dla WYKONAWCÓW -->
+                <!-- <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Strefa zleceń</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Moje zlecenia</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Portfel</a></div>
+                </div> -->
+
+                <!-- kod dla zleceniodawców i wykonawców -->
+                <!-- <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self"><i
+                                class="fas fa-envelope"></i></a></div>
+                    <div class="c-menu-main__notice">99</div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self"><i
+                                class="fas fa-bell"></i></a></div>
+                    <div class="c-menu-main__notice">9</div>
+                </div>
+                <div class="c-menu-main__item">
+                    <button id="btnLog" class="c-btn c-btn__gold u-d-none-under-medium">Moje konto</button>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self"><i
+                                class="fas fa-power-off"></i></a></div>
+                </div> -->
+            </div>
+            <!-- menu na telefony - niezalogowany -->
+            <div class="c-menu-main__item u-d-none-medium">
+                <button id="btnLogMobile" class="c-btn c-btn__small"><i
+                        class="fas fa-user"></i></button>
+            </div>
+            <!-- menu na telefony zalogowany -->
+        </div>
+    </header>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

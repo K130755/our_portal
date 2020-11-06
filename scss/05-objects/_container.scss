@@ -1,0 +1,19 @@
+.o-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &--center{
+
+        @include medium {
+            margin: 0 auto;
+            max-width: 74rem;
+        }
+    
+        @include large {
+            max-width: 112rem;
+        }
+    }
+
+}
+

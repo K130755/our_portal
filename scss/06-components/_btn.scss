@@ -1,0 +1,58 @@
+.c-btn {
+    font-size: $font-base * 1.4;
+    color: white;
+    border: none;
+    padding:  10px 30px;
+    cursor: pointer;
+    
+    @include xl {
+        font-size: $font-base * 1.7;
+        padding:  10px 25px;
+
+    }
+
+    &__outline-gold {
+        background-color: transparent;
+        border: 1px solid $color-primary;
+        @include transition-linear;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    &__gold {
+        background-color: $color-primary;
+        @include transition-linear;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-secondary;
+        }
+    }
+
+    &__small {
+        background-color: $color-black;
+        padding: 10px 10px;
+        border-radius: 5%;
+        align-items: center;
+        padding-right: 0;
+        
+        i{
+            font-size: $font-base * 3;
+
+        }
+       
+    }
+
+    &__blue {
+        background-color: $color-secondary;
+        padding: 15px 30px;
+        @include transition-linear;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+}
+   

@@ -1,0 +1,50 @@
+@mixin medium {
+    @media screen and (min-width: #{$bp-md}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media screen and (min-width: #{$bp-xl}) {
+        @content;
+    }
+}
+
+// overlay
+@mixin bg-overlay($color, $opacity) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	width: 100%;
+	content: "";
+	z-index: 0;
+	background: none repeat $color;
+	opacity: $opacity;
+}
+
+@mixin transition-linear {
+	transition: .3s linear;
+}
+
+
+
+// h1 {
+//     color: red;
+//     font-size: 20px;
+//     @include medium {
+//         color: green;
+//         font-size: 40px;
+//     }
+//     @include large {
+//         color: navy;
+//         font-size: 60px;
+//     }
+// }

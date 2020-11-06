@@ -1,0 +1,32 @@
+.u-d-none-under-large {
+    display: none;
+
+    @include large {
+        display: flex;
+    }
+}
+.u-d-none-under-medium {
+    display: none;
+
+    @include medium{
+        display: block;
+    }
+}
+.u-d-none-medium {
+    display: block;
+
+    @include medium {
+        display: none;
+    }
+}
+.u-d-none-under-xl {
+    display: none;
+
+    @include xl {
+        display: block;
+    }
+}
+
+.display-block {
+    display: block;
+}

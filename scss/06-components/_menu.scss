@@ -1,0 +1,139 @@
+
+// menu użytkownik niezalogowany
+
+.c-menu-main {
+    width: 100%;
+    height: 60px;
+    background-color: $color-black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+   
+    &__notice {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        color: $color-black;
+        background-color: $color-red-noticed;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+        font-size: $font-base * 1.2;
+        
+    }
+
+    &__item {
+        padding: $gutter;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        // position: relative;
+        
+
+        &--link {
+            color: $color-white;
+            font-size: $font-base * 1.4;
+
+            @include xl{
+                font-size: $font-base * 1.7;
+
+            }
+        }
+
+        a, i{
+            @include transition-linear;
+
+        }
+
+        i {
+            font-size: $font-base * 2;
+            padding-right: 10px;
+        }
+
+        &:hover a,
+        &:hover i {
+            color: $color-primary;
+        }
+
+    }
+    // menu na telefony
+
+    &__nested {
+        display: none;
+        background-color: $color-black-op-6;
+        color: $color-white;
+        position: absolute;
+        top: 60px;
+        left: 0px;   
+        width: 200px;
+        text-transform: none; 
+        @include transition-linear;
+
+        &--link{
+            font-size: $grid-base * 1.6;
+            padding: $grid-base *2;
+            cursor: pointer;
+            text-align: center;
+
+            &:hover {
+                background-color: $color-black-op-6;
+            }
+            &:hover a {
+                color: $color-primary;
+            }
+        }
+
+        &--a {
+            color: $color-white;
+    }
+
+}
+}
+
+// menu pod logo
+
+.c-menu-under-logo {
+    display: none;
+
+    @include medium{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+        background-image: linear-gradient(180deg,$color-white, transparent);
+
+    }
+
+    &__item {
+        font-size: $grid-base * 1.4;
+        padding: $grid-base * 1.2 0;
+        border-top: 1px solid $color-secondary;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        a {
+            @include transition-linear;
+        }
+
+        &:hover a {
+            color: $color-secondary;
+        }
+    }
+
+    &__item:first-of-type {
+        border-top: none;
+    }
+    
+    &--link {
+        align-self: center;
+        color: $color-black;
+    }
+}

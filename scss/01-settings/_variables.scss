@@ -1,0 +1,27 @@
+// kolory z koła kolorów Adobe.
+$color-white: #fff;
+$color-black: #000;
+$color-black-op-6: rgba(0, 0, 0, 0.607);
+$color-gray-bg: #eeeeee;
+$color-gray-dark: #aeacac;
+
+
+$color-primary: #BF8417;
+$color-secondary: #1761BF;
+$color-red-noticed: #D92553;
+
+$gradient-white: linear-gradient(0deg, rgba(0,0,0,0)0%, rgba(255,255,255,1) 100%);
+
+// wielkość bazowa fontów
+$font-base: 10px;
+
+// grid - siatka
+$grid-base: $font-base;
+
+// odstęp pomiędzy kolumnami
+$gutter: 1.5 * $grid-base;
+
+// breakpoints dla RWD
+$bp-md: 640px;
+$bp-lg: 960px;
+$bp-xl: 1200px;
