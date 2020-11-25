@@ -9,6 +9,10 @@
     justify-content: flex-end;
     align-items: center;
 
+    &__contener {
+        position: relative;
+    }
+
    
     &__notice {
         position: absolute;

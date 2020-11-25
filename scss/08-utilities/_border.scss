@@ -1,0 +1,13 @@
+.u-border-bottom-gray {
+    border-bottom: 2px solid $color-gray-dark;
+}
+.u-border-top-gray {
+    border-top: 2px solid $color-gray-dark;
+}
+
+.u-border-right-gray {
+    @include xl {
+        border-right: 2px solid $color-gray-dark;
+
+    }
+}

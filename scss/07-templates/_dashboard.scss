@@ -1,0 +1,179 @@
+.t-dashboard {
+    
+    &__bookmarks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        @include large {
+            flex-direction: row;
+        }
+
+    }
+
+    &__form {
+        width: 100%;
+        padding: 10px 5px;
+        padding-right: 0;
+
+        @include large {
+            padding-left: 40px;
+        }
+
+        &--row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            // padding-left: $grid-base * 2;
+            
+            @include large {
+                flex-direction: row;
+            }
+            
+
+        }
+
+        &--blue {
+            padding-top: 0;
+            padding-bottom: $grid-base;
+            background-color: $color-blue;
+            border-radius: 5px 0 0 5px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            padding: 0;
+        }
+
+    }
+
+    &__item {
+        width: 70%;
+        font-size: $font-base * 1.6;
+        padding-top: $grid-base;
+        margin: 0 0 15px 0;
+        background-color: $color-white;
+
+        &:focus {
+            background-color: $color-white;
+        }
+    }
+
+    &__label {
+        width: 30%;
+        margin-right: 10px;
+    }
+
+    &__header {
+        padding-top: $grid-base * 2;
+        padding-bottom: $grid-base * 2;
+        padding-left: $grid-base * 2;
+        color: $color-white;
+
+        &--h3 {
+            margin-left: 0;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: $grid-base * 2 0;
+    }
+
+    // mocne strony
+
+    &__category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $grid-base * 5;
+
+        &--h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $color-secondary;
+        }
+
+        &--col {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    // portfolio
+
+    &__portfolio {
+        width: 100%;
+
+        &--label {
+            width: 50%;
+            align-self: flex-start;
+
+            @include large {
+                align-self: center;
+            }
+            
+        }
+
+        &--submit {
+            justify-content: flex-end;
+            padding-bottom: 20px;
+            border-bottom: 2px dotted $color-gray-dark;
+
+            button {
+                margin-right: 50px;
+
+            }
+        }
+
+        &--text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 240px;
+            height:240px;
+            background-color: $color-gray-bg;
+            border: 2px solid $color-primary;
+            border-radius: 3%;
+
+            i {
+                font-size: $grid-base * 4;
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__sm {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        &--icon {
+            font-size: $grid-base * 2.5;
+            margin-right: 15px;
+            color: $color-blue;
+        }
+
+        input {
+            padding: 0;
+            margin: 0;
+
+            &:focus i {
+                color: $color-secondary;
+            }
+        }
+    }
+    
+}

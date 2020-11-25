@@ -1,0 +1,28 @@
+.t-dashboard-top {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    border-bottom: 2px solid $color-gray-dark;
+
+    &__avatar {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-30%);
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border: 3px solid $color-primary;
+        
+        @include medium {
+            left: 40%;
+
+        }
+        @include large {
+            left: 20%;
+
+        }
+
+    }
+}

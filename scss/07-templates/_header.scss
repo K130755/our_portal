@@ -1,9 +1,14 @@
 
 .t-header {
     position: relative;
-    background: url('../../assets/img/pexels-burst-374016.jpg') top/cover;
-    height: 90vh;
-    width: 100%;
+    z-index: 1000;
+    
+    &__main {
+        background: url('../../assets/img/pexels-burst-374016.jpg') top/cover;
+        height: 90vh;
+        width: 100%;
+
+    }
 
     &__logo {
         position: absolute;

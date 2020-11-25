@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d35ad727d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mój profil - Pretext.eu</title>
+</head>
+
+<body>
+    <header class="t-header">
+
+        <!-- logo w menu -->
+        <div class="t-header__logo">
+            <img class="t-header__logo--big" src="assets/img/logo/logo.png" alt="logo portalu Pretext">
+            <img class="t-header__logo--small" src="assets/img/logo/pen.png" alt="ikona logo">
+        </div>
+        <!-- menu pod logiem -->
+        <div class="t-header__logo t-header__logo--under">
+            <ul class="c-menu-under-logo">
+                <li class="c-menu-under-logo__item">
+                    <div class=""><a class="c-menu-under-logo--link" href="zasadyWspolpracy" target="_self">Zasady
+                            współpracy</a></div>
+                </li>
+                <li class="c-menu-under-logo__item">
+                    <div class=""><a class="c-menu-under-logo--link" href="piszDlaNas" target="_self">Pisz dla nas</a>
+                    </div>
+                </li>
+                <li class="c-menu-under-logo__item">
+                    <div class=""><a class="c-menu-under-logo--link" href="faq" target="_self">Pytania i odpowiedzi</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- menu mobile - niezlogowany użytkownik -->
+        <div class="t-header__mobile-menu">
+            <div class="c-menu-main__item">
+                <i id="btnNestedMenu" class="fas fa-bars"></i>
+            </div>
+            <ul class="c-menu-main__nested">
+                <!-- menu mobile zalogowany wykonawca -->
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Strefa zleceń</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Moje zlecenia</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        Portfel</a></li>
+                <li class="c-menu-main__nested--link"><a class="c-menu-main__nested--a" href="#">
+                        FAQ</a></li>
+            </ul>
+
+        </div>
+        <!-- menu strona główna deskop użytkownik niezalogowany-->
+        <div class="c-menu-main t-header__menu-main">
+            <div class="t-header__menu-main--links">
+                <!-- <div class="c-menu-main__item u-d-none-under-xl ">
+                    <div class=""><a class="c-menu-main__item--link " href="index" target="_self">Strona główna</a>
+                    </div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <div class=""><a class="c-menu-main__item--link " href="kalkulator" target="_self">Wycena</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <div class=""><a class="c-menu-main__item--link " href="kontakt" target="_self">Kontakt</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <div class=""><a class="c-menu-main__item--link " href="faq" target="_self">FAQ</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <i class="fas fa-grip-lines-vertical u-color-secondary" aria-hidden="false"></i>
+                    <div class=""><a class="c-menu-main__item--link u-color-secondary" href="piszDlaNas"
+                            target="_self">Dla Wykonawców</a></div>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-large">
+                    <button class="c-btn c-btn__outline-gold">Zarejestruj się</button>
+                </div>
+                <div class="c-menu-main__item u-d-none-under-medium">
+                    <button id="btnLog" class="c-btn c-btn__gold">Zaloguj się</button>
+                </div> --> -->
+
+                <!-- Menu dla ZLECENIODAWCÓW -->
+                <!-- <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Moje zlecenia</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Portfel</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Wycena</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Wykonawcy</a></div>
+                </div> -->
+
+                <!-- Menu dla WYKONAWCÓW -->
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Strefa zleceń</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Moje zlecenia</a></div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self">Portfel</a></div>
+                </div>
+
+                <!-- kod dla zleceniodawców i wykonawców -->
+                <div class="c-menu-main__item">
+                    <div class="c-menu-main__contener">
+                        <a class="c-menu-main__item--link " href="" target="_self">
+                            <i class="fas fa-envelope"></i></a>
+                        <div class="c-menu-main__notice">99</div>
+
+                    </div>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class="c-menu-main__contener"><a class="c-menu-main__item--link " href="" target="_self"><i
+                                class="fas fa-bell"></i></a>
+                        <div class="c-menu-main__notice">9</div>
+
+                    </div>
+                </div>
+                <div class="c-menu-main__item">
+                    <button id="btnLog" class="c-btn c-btn__gold u-d-none-under-medium">Moje konto</button>
+                </div>
+                <div class="c-menu-main__item">
+                    <div class=""><a class="c-menu-main__item--link " href="" target="_self"><i
+                                class="fas fa-power-off"></i></a></div>
+                </div>
+            </div>
+            <!-- menu na telefony - niezalogowany -->
+            <!-- <div class="c-menu-main__item u-d-none-medium">
+                <button id="btnLogMobile" class="c-btn c-btn__small"><i class="fas fa-user"></i></button>
+            </div>
+            <!-- menu na telefony zalogowany -->
+            <!-- <div class="c-menu-main__item u-d-none-medium">
+                <div class="c-menu-main__contener"><a class="c-menu-main__item--link " href="" target="_self"><i
+                            class="fas fa-bell"></i></a>
+                    <div class="c-menu-main__notice">9</div>
+                </div>
+            </div> --> -->
+
+
+
+    </header>
+    <section class="o-container t-dashboard-top">
+        <div class="o-row">
+            <div class="o-col">
+                <div class="t-dashboard-top__avatar">
+                    <img src="assets/img/no_photo.png" alt="zdjecie uzytkownika">
+                </div>
+            </div>
+            <div class="o-col"></div>
+        </div>
+    </section>
+    <section class="t-dasboard">
+        <div class="o-row">
+            <div class="o-col o-col--lg25">
+                <div class="t-dashboard__bookmarks">
+                    <button class="c-btn c-btn__gray-big active">Moje dane</button>
+                    <button class="c-btn c-btn__gray-big">Mocne strony</button>
+                    <button class="c-btn c-btn__gray-big">Moje portfolio</button>
+                    <button class="c-btn c-btn__gray-big">Ustawienia</button>
+                </div>
+            </div>
+            <div class="o-col o-col--lg75">
+                <form class="c-form t-dashboard__form display-none" action="">
+                    <div class="t-dashboard__flex">
+                        <div class="o-col o-col--lg50">
+                            <div class="t-dashboard__form--row">
+                                <label class="c-form__label t-dashboard__label" for="name">Imię:</label>
+                                <input class="c-form__item t-dashboard__item" type="text" id="name" name="name">
+                            </div>
+                            <div class="t-dashboard__form--row">
+                                <label class="c-form__label t-dashboard__label" for="surname">Nazwisko:</label><br>
+                                <input class="c-form__item t-dashboard__item" type="text" id="surname"
+                                    name="surname"><br>
+
+                            </div>
+                            <div class="t-dashboard__form--row">
+
+                                <label class="c-form__label t-dashboard__label" for="nick">Nick:</label>
+                                <input class="c-form__item t-dashboard__item" type="text" id="nick" name="nick">
+                            </div>
+                            <div class="t-dashboard__form--row">
+
+                                <label class="c-form__label t-dashboard__label" for="tel">Telefon:</label>
+                                <input class="c-form__item t-dashboard__item" type="tel" id="tel" name="tel">
+                            </div>
+                            <div class="t-dashboard__form--row">
+
+                                <label class="c-form__label t-dashboard__label" for="mail">Adres e-mail:</label>
+                                <input class="c-form__item t-dashboard__item" type="mail" id="mail" name="mail">
+                            </div>
+                            <div class="t-dashboard__form--row">
+                                <label class="c-form__label t-dashboard__label" for="mail">Miasto:</label>
+                                <input class="c-form__item t-dashboard__item" type="mail" id="mail" name="mail">
+                            </div>
+                            <div class="t-dashboard__form--row">
+
+                                <label class="c-form__label t-dashboard__label" for="mail">Kod pocztowy:</label>
+                                <input class="c-form__item t-dashboard__item" type="mail" id="mail" name="mail">
+                            </div>
+                            <div class="t-dashboard__form--row">
+                                <label class="c-form__label t-dashboard__label" for="mail">Ulica:</label>
+                                <input class="c-form__item t-dashboard__item" type="mail" id="mail" name="mail">
+
+                            </div>
+                            <div class="t-dashboard__form--row">
+                                <label class="c-form__label t-dashboard__label" for="mail">Numer budynku:</label>
+                                <input class="c-form__item t-dashboard__item" type="mail" id="mail" name="mail">
+
+                            </div>
+                            <div class="t-dashboard__form--row">
+                                <label class="c-form__label t-dashboard__label" for="mail">Numer lokalu:</label>
+                                <input class="c-form__item t-dashboard__item" type="mail" id="mail" name="mail">
+                            </div>
+
+                        </div>
+                        <div class="o-col o-col--lg50">
+                            <div class="t-dashboard__form--row">
+                                <label class="c-form__label t-dashboard__label" for="bankName">Nazwa banku:</label>
+                                <input class="c-form__item t-dashboard__item" type="text" id="bankName" name="bankName">
+                            </div>
+                            <div class="t-dashboard__form--row u-margin-b-10">
+                                <label class="c-form__label t-dashboard__label" for="bankNum">Numer konta:</label>
+                                <input class="c-form__item t-dashboard__item" type="text" id="bankNum" name="bankNum">
+                            </div>
+                            <div class="c-form t-dashboard__form--blue">
+                                <div class="t-dashboard__header">
+                                    <h3 class="c-heading c-heading__h4 t-dashboard__header--h3">Dane firmowe</h3>
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">Nazwa firmy:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">NIP:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">REGON:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">Miasto:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">Kod pocztowy:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">Ulica:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">Numer budynku:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <label class="c-form__label t-dashboard__label" for="bankNum">Numer lokalu:</label>
+                                    <input class="c-form__item t-dashboard__item" type="text" id="bankNum"
+                                        name="bankNum">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="o-col t-dashboard__submit">
+                        <button class="c-btn c-btn__multicolor c-btn__big" type="submit">Zapisz dane</button>
+                    </div>
+                </form>
+                <form action="" class="c-form t-dashboard__form display-none">
+                    <div class="o-col u-margin-b-30">
+                        <p class="u-text-align-center">Zaznacz kategorie, w których czujesz się dobrze. Otrzymasz od nas powiadomienie mailowe,
+                            jeśli w Twoich kategoriach pojawią się nowe zlecenia. </p>
+                    </div>
+                    <div class="t-dashboard__flex">
+                        <div class="o-col o-col--xl50 u-border-right-gray">
+                            <div class="t-dashboard__category">
+                                <h3 class="c-heading c-heading__h4 t-dashboard__category--h3">Tematyka</h3>
+                            </div>
+                            <div class="o-col t-dashboard__category--col">
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Biznes i prawo">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Budownictwo">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category category-active" type="button" value="E-commerce">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Edukacja">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Erotyka">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Publicystyka">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Kultura">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Motoryzacja">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Moda">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Nowe technologie">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Sport">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Styl życia">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Turystyka">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Zdrowie">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Gastronomia">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Inne">    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-col o-col--xl50">
+                            <div class="t-dashboard__category">
+                                <h3 class="c-heading c-heading__h4 t-dashboard__category--h3">Rodzaj tekstu</h3>
+                            </div>
+                            <div class="o-col t-dashboard__category--col">
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Opis">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Tekst preclowy">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Tekst synonimiczny">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Tekst zapleczowy">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Recenzja">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Artykuł specjalisyczny">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Tekst marketingowy">    
+                                    <input class="c-btn c-btn__big c-btn__category u-margin-l-30" type="button" value="Korekta">    
+                                </div>
+                                <div class="t-dashboard__form--row">
+                                    <input class="c-btn c-btn__big c-btn__category" type="button" value="Inne">      
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="o-col t-dashboard__submit">
+                        <button class="c-btn c-btn__multicolor c-btn__big" type="submit">Zapisz dane</button>
+                    </div>
+                </form>
+                <form action="" class="c-form t-dashboard__form">
+                    <div class="o-col u-margin-b-30">
+                        <p class="u-text-align-center u-margin-r-10">Uzupełnij swoją wizytówkę, aby lepiej zaprezentować swoje umiejętności Zleceniodawcom. Pamiętaj, że musisz posiadać pełne prawa autorskie do wgrywanych tekstów! </p>
+                    </div>
+                    <div class="t-dashboard__flex">
+                        <div class="t-dashboard__form--row t-dashboard__portfolio">
+                            <label class="c-form__label t-dashboard__label t-dashboard__portfolio--label" for="about-you">Napisz coś o sobie:</label>
+                            <textarea class="c-form__item c-form__textarea" name="about-you" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="o-col u-margin-b-30">
+                        <p>Linki do Twoich miejsc w internecie:</p>
+                    </div>
+                    <div class="o-col">
+                        <div class="t-dashboard__form--row t-dashboard__sm">
+                            <i class="fab fa-facebook-square t-dashboard__sm--icon"></i>
+                            <input class="c-form__item" type="url" name="link-fb" id="link-fb">
+                        </div>
+                        <div class="t-dashboard__form--row t-dashboard__sm">
+                            <i class="fab fa-instagram t-dashboard__sm--icon"></i>
+                            <input class="c-form__item" type="url" name="link-fb" id="link-fb">
+                        </div>
+                        <div class="t-dashboard__form--row t-dashboard__sm">
+                            <i class="fas fa-hashtag t-dashboard__sm--icon"></i>
+                            <input class="c-form__item" type="url" name="link-fb" id="link-fb">
+                        </div>
+                    </div>
+                    <div class="o-col t-dashboard__submit t-dashboard__portfolio--submit">
+                        <button class="c-btn c-btn__multicolor c-btn__big" type="submit">Zapisz dane</button>
+                    </div>
+                    <div class="o-col">
+                        <div class="o-col u-margin-b-30">
+                            <p>Twoje przykładowe teksty:</p>
+                        </div>
+                        <div class="o-row">
+                            <div class="o-col o-col--md50 o-col--lg33">
+                                <div class="t-dashboard__portfolio--text">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Dodaj tekst</p>
+                                </div>
+                            </div>
+                            <div class="o-col o-col--md50 o-col--lg33">
+                                <div class="t-dashboard__portfolio--text">
+                                    
+                                </div>
+                            </div>
+                            <div class="o-col o-col--md50 o-col--lg33">
+                                <div class="t-dashboard__portfolio--text">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

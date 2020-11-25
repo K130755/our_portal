@@ -6,9 +6,12 @@ $color-gray-bg: #eeeeee;
 $color-gray-dark: #aeacac;
 
 
-$color-primary: #BF8417;
+// $color-primary: #BF8417;
+$color-primary: #CC8D18;
+$color-primary-op6: #bf8417bc;
 $color-secondary: #1761BF;
 $color-red-noticed: #D92553;
+$color-blue: #5588CA;
 
 $gradient-white: linear-gradient(0deg, rgba(0,0,0,0)0%, rgba(255,255,255,1) 100%);
 
@@ -22,6 +25,6 @@ $grid-base: $font-base;
 $gutter: 1.5 * $grid-base;
 
 // breakpoints dla RWD
-$bp-md: 640px;
+$bp-md: 768px;
 $bp-lg: 960px;
 $bp-xl: 1200px;

@@ -1,0 +1,21 @@
+.u-margin-b-10 {
+    margin-bottom: $grid-base;
+}
+.u-margin-b-30 {
+    margin-bottom: $grid-base * 3;
+}
+.u-margin-l-30 {
+
+    @include large {
+        margin-left: $grid-base * 3;
+
+    }
+}
+
+.u-margin-l-0 {
+    margin-left: 0;
+} 
+.u-margin-r-10 {
+    margin-right: $grid-base;
+}
+
